@@ -1,0 +1,519 @@
+/**
+ * Name: default.css
+ *
+ * -
+ *
+ * The default color scheme
+ *
+ */
+
+/* ==========================================================================
+  =Typography
+  ========================================================================== */
+
+body {
+    background-color: #fff;
+    color: #6d6d6d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #313947;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #6d6d6d;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #999;
+}
+
+blockquote span {
+    color: #999999;
+}
+
+hr {
+    border: solid #e0e0e0;
+}
+
+code {
+    border: 1px solid #e0e0e0;
+    background-color: #f3f3f3;
+    color: #d50f25;
+}
+
+pre {
+    border: 1px solid #e0e0e0;
+    background-color: #f3f3f3;
+}
+
+.hr {
+    border-top: 1px solid #e0e0e0;
+}
+
+.text-highlight { color: #4fb7ff; }
+
+.mute{ color: #999; }
+
+@media (max-width: 767px) {
+
+    body {
+        background-color: #fff;
+    }
+
+}
+
+/* ==========================================================================
+   =Typography - Links
+   ========================================================================== */
+
+a,
+a:visited {
+    color: #4FB7FF;
+}
+
+a:active {
+    background: transparent;
+}
+
+/* ==========================================================================
+   =Typography - Tables
+   ========================================================================== */
+
+table {
+    background-color: transparent;
+}
+
+table th,
+table td {
+    border-top: 1px solid #b4bfc3;
+}
+
+table th {
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Typography - Forms
+   ========================================================================== */
+
+label span { color: #d50f25; }
+
+input,
+textarea,
+select {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    color: #444;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: #bbb;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* ==========================================================================
+   =Misc
+   ========================================================================== */
+
+.javascript-required,
+.modern-browser-required {
+    background-color: #d50f25;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   =Alerts
+   ========================================================================== */
+
+.alert {
+    border: 1px solid #cdcdcd;
+}
+
+.alert.info {
+    background-color: #94cee4;
+    color: #fff;
+}
+
+.alert.success {
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+.alert.error {
+    background-color: #ff0030;
+    color: #fff;
+}
+
+.alert.warning {
+    background-color: #ff7992;
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Buttons
+   ========================================================================== */
+
+/* =Default Button
+   ========================================================================== */
+
+.btn {
+    border-bottom: 1px solid #3382b8;
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+a.btn { color: #fff; }
+
+.btn-large {
+    padding: 20px 25px;
+    border-bottom-width: 2px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.btn:hover {
+    border-bottom-color: #20252f;
+    background-color: #313947;
+}
+
+/* =Colored Buttons
+   ========================================================================== */
+
+.btn-white {
+    border: 1px solid #4fb7ff;
+    background-color: transparent;
+    color: #4fb7ff;
+}
+
+a.btn-white { color: #4fb7ff; }
+
+.btn-white:hover {
+    border-color: #4fb7ff;
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+.btn-white.alt { border-color: #6d6d6d; }
+a.btn-white.alt { color: #6d6d6d; }
+
+.btn-white.alt:hover {
+    border-color: #4fb7ff;
+    color: #fff;
+}
+
+.btn-black {
+    border: 1px solid #313947;
+    background-color: #313947;
+    color: #fff;
+}
+
+a.btn-black { color: #fff; }
+
+.btn-black:hover {
+    border-color: #4fb7ff;
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Custom Lists
+   ========================================================================== */
+
+ul.check li:before,
+ul.square-check li:before {
+    color: #4fb7ff;
+}
+
+ul.fill-circle li:before {
+    background-color: #4fb7ff;
+}
+
+ul.square li:before {
+    background-color: #4fb7ff;
+}
+
+ul.diamond li:before {
+    background-color: #4fb7ff;
+}
+
+
+/* ==========================================================================
+   =Dividers
+   ========================================================================== */
+
+.divider.single-line { border-top: 1px solid #e0e0e0; }
+
+.divider.double-line { border-top: 4px double #e0e0e0; }
+
+.divider.single-dotted {
+    background: url(../images/layout/bg-single-dotted.gif) repeat-x top left ;
+}
+
+.divider.double-dotted {
+    background: url(../images/layout/bg-double-dotted.gif) repeat-x top left;
+}
+
+/* ==========================================================================
+   =Headlines
+   ========================================================================== */
+
+.headline h2:after,
+.headline h3:after {
+    border-top: 2px solid #4fb7ff;
+}
+
+.headline-2 h1:after {
+    border-top: 2px solid #4fb7ff;
+}
+
+.headline-2 h2:after {
+    border-top: 1px solid #4fb7ff;
+}
+
+.headline-2 h3:after,
+.headline-2 h4:after {
+    border-top: 1px solid #4fb7ff;
+}
+
+
+/* ==========================================================================
+   =Icon Boxes
+   ========================================================================== */
+
+/* =Icon Box 1
+   ========================================================================== */
+
+.icon-box-1 > span {
+    background-color: #3a4e6a;
+    color: #fff;
+}
+
+.icon-box-1:hover > span {
+    background-color: #4fb7ff;
+}
+
+/* =Icon Box 2
+   ========================================================================== */
+
+.icon-box-2 > span {
+    border: 1px solid #e0e0e0;
+}
+
+.icon-box-2:hover > span {
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+/* =Icon Box 3
+   ========================================================================== */
+
+.icon-box-3 > span {
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.icon-box-3 .icon-box-content {
+    border: 1px solid #e0e0e0;
+}
+
+.icon-box-3:hover > span {
+    background-color: #4fb7ff;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   =Styled Tables
+   ========================================================================== */
+
+.table-bordered {
+    border: 1px solid #e0e0e0;
+}
+
+.table-bordered th,
+.table-bordered td { border-left: 1px solid #e0e0e0; }
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th { background-color: #f3f3f3; }
+
+@media (max-width: 480px) {
+
+    tr { border-top: 1px solid #bbb; }
+
+}
+
+
+/* ==========================================================================
+   =Personal info
+   ========================================================================== */
+
+.personal-info li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* ==========================================================================
+   =Contact form
+   ========================================================================== */
+
+label.validation-error { color: #d50f25; }
+
+input.validation-error,
+textarea.validation-error,
+select.validation-error { border: 1px solid #e0e0e0; }
+
+
+/* ==========================================================================
+   =Wrap
+   ========================================================================== */
+
+#wrap {
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+
+    #wrap { border-top: 10px solid #313947; }
+
+}
+
+/* ==========================================================================
+	=Header Top
+	========================================================================== */
+
+#header-top {
+    background-color: #313947;
+    color: #fff;
+}
+
+#header-top a,
+#header-top h1,
+#header-top h2,
+#header-top h3,
+#header-top h4,
+#header-top h5,
+#header-top h6 { color: #fff; }
+
+/* ==========================================================================
+   =Header
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+    #header {
+        background-color: #313947;
+    }
+
+}
+
+/* ==========================================================================
+   =Menu
+   ========================================================================== */
+
+a.menu-collapse {
+    color: #fff;
+}
+
+.nav {
+    background-color: #f9f9f9;
+}
+
+.nav .close-menu i {
+    color: #898989;
+}
+
+.menu li a {
+    color: #898989;
+}
+
+.menu li a:hover,
+.menu li.current a {
+    border-bottom-color: #4fb7ff;
+    color: #313947;
+}
+
+/* ==========================================================================
+   =Page Header
+   ========================================================================== */
+
+#page-header {
+    color: #fff;
+}
+
+#page-header h3 {
+    color: #fff;
+}
+
+#page-header-overlay {
+    background-color: rgba(0, 33, 56, 0.75) ;
+}
+
+/* ==========================================================================
+   =Footer
+   ========================================================================== */
+
+#footer {
+    border-top: 1px solid #e0e0e0;
+}
+
+#footer a,
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 { color: #6d6d6d; }
+
+
+/* ==========================================================================
+   =Auto Controls (Start / Stop)
+   ========================================================================== */
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    background: url(../js/bxslider/images/controls.png) -86px -11px no-repeat;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    background: url(../js/bxslider/images/controls.png) -86px -44px no-repeat;
+}
+/* ==========================================================================
+   =Image Captions
+   ========================================================================== */
+
+.bx-wrapper .bx-caption {
+    background: rgba(80, 80, 80, 0.75);
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+}
